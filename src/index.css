@@ -1,8 +1,4 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 
 @theme {
   --container-padding: 35px;
@@ -10,4 +6,9 @@
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1200px;
+}
+
+:root {
+  --main-color: #ff5227;
+  --secondary-color: #f8f7f7;
 }
