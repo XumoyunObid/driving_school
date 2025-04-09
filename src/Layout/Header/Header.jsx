@@ -15,7 +15,7 @@ const Header = () => {
   }, [location]);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); 
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
