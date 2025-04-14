@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className="bg-[#111111] text-white py-12 px-6 lg:px-20">
+    <footer className="bg-[#111111] text-white py-12 px-6 lg:px-20 ">
       <div className="container mx-auto grid md:grid-cols-4 gap-8">
         <div>
           <div className="flex items-center gap-2 mb-4">
@@ -28,6 +28,12 @@ const Footer = () => {
             </li>
             <li>
               <Link to={"/services"}>Service</Link>
+            </li>
+            <li>
+              <Link to={"/contact-us"}>Contact Us</Link>
+            </li>
+            <li>
+              <Link to={"/instructors"}>Instructors</Link>
             </li>
           </ul>
         </div>

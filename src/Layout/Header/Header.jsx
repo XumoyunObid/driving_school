@@ -21,10 +21,8 @@ const Header = () => {
   return (
     <div>
       <div
-        className="container flex items-center justify-between py-8 mx-auto w-full"
+        className="container flex items-center justify-between px-5 py-8 mx-auto w-full"
         style={{
-          paddingLeft: "var(--container-padding)",
-          paddingRight: "var(--container-padding)",
           maxWidth: "var(--breakpoint-lg)",
         }}
       >

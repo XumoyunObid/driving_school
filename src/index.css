@@ -3,7 +3,6 @@
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
 @theme {
-  --container-padding: 35px;
   --breakpoint-*: initial;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;

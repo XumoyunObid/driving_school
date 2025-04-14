@@ -38,10 +38,8 @@ const ContactUs = () => {
 
   return (
     <section
-      className="py-16 px-6 lg:px-20 text-center bg-white container mx-auto w-full"
+      className="py-16 px-6 text-center bg-white container mx-auto w-full"
       style={{
-        paddingLeft: "var(--container-padding)",
-        paddingRight: "var(--container-padding)",
         maxWidth: "var(--breakpoint-lg)",
       }}
     >
@@ -52,9 +50,9 @@ const ContactUs = () => {
         techniques.
       </p>
 
-      <div className="grid gap-10 md:grid-cols-3 items-center justify-between">
+      <div className="flex flex-col gap-10 md:flex-row justify-between">
         {/* Location */}
-        <div className="bg-[var(--secondary-color)] rounded-2xl p-6 shadow-sm border-1 border-gray-300 h-[250px] flex flex-col items-center justify-center">
+        <div className="bg-[var(--secondary-color)] rounded-2xl p-6 shadow-sm border-1 border-gray-300 w-[352px] h-[250px] flex flex-col items-center justify-center">
           <EnvironmentOutlined className="text-[var(--main-color)] text-3xl mb-4" />
           <h3 className="text-2xl font-semibold mb-2">Location</h3>
           <p className="text-gray-600 text-lg">
@@ -64,7 +62,7 @@ const ContactUs = () => {
         </div>
 
         {/* Phone */}
-        <div className="bg-[var(--secondary-color)] rounded-2xl p-6 shadow-sm border-1 border-gray-300 h-[250px] flex flex-col items-center justify-center">
+        <div className="bg-[var(--secondary-color)] rounded-2xl p-6 shadow-sm border-1 border-gray-300 w-[352px] h-[250px] flex flex-col items-center justify-center">
           <PhoneOutlined className="text-[var(--main-color)] text-3xl mb-4" />
           <h3 className="text-2xl font-semibold mb-2">Give us a call</h3>
           <p className="text-gray-600 text-lg">+555-123-4567</p>
@@ -72,7 +70,7 @@ const ContactUs = () => {
         </div>
 
         {/* Email */}
-        <div className="my-20 bg-[var(--secondary-color)] rounded-2xl p-6 shadow-sm border-1 border-gray-300 h-[250px] flex flex-col items-center justify-center">
+        <div className="mb-20 bg-[var(--secondary-color)] rounded-2xl p-6 shadow-sm border-1 border-gray-300 w-[352px] h-[250px] flex flex-col items-center justify-center">
           <MailOutlined className="text-[var(--main-color)] text-3xl mb-4" />
           <h3 className="text-2xl font-semibold mb-2">Email</h3>
           <p className="text-gray-600 text-lg">info@balancepoint.com</p>
