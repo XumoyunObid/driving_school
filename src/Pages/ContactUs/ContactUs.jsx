@@ -157,12 +157,13 @@ const ContactUs = () => {
                 className="w-full p-3 border border-gray-300 rounded-lg bg-white"
               />
             </div>
-            <button
+            <Button
               type="submit"
-              className="bg-[var(--main-color)] text-white px-8 py-3 rounded-lg text-lg font-semibold"
+              variant={"primary"}
+              className="cursor-pointer"
             >
               Send Message
-            </button>
+            </Button>
           </form>
         </div>
       </div>

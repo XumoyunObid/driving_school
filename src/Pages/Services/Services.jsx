@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import ContactSection from "../ContactUs/ContactSection";
 
 const Services = () => {
   return (
     <div>
-      <h1>services</h1>
+      <section>
+        <ContactSection />
+      </section>
     </div>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

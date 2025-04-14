@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
-import logo from "/logo.svg";
+import logo from "/logo1.svg";
 import Button from "../../Components/Buttons/MainButton";
 import NavDrawer from "./../../Components/NavDrawer";
 import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
@@ -21,13 +21,13 @@ const Header = () => {
   return (
     <div>
       <div
-        className="container flex items-center justify-between px-5 py-8 mx-auto w-full"
+        className="container flex items-center justify-between px-5 py-2 mx-auto w-full"
         style={{
           maxWidth: "var(--breakpoint-lg)",
         }}
       >
         <RouterLink to="/" className="flex items-center">
-          <img className="w-[180px]" src={logo} alt="" />
+          <img className="w-[70px]" src={logo} alt="" />
         </RouterLink>
 
         <ul className="lg:flex items-center gap-6 hidden">

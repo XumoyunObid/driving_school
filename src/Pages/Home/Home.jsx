@@ -5,11 +5,15 @@ import { Link, Link as RouterLink } from "react-router-dom";
 import {
   BookFilled,
   CarFilled,
+  CheckCircleFilled,
   CheckCircleOutlined,
   HourglassFilled,
   StarFilled,
 } from "@ant-design/icons";
 import FeatureCard from "../../Components/Cards/FeatureCard";
+import ContactSection from "../ContactUs/ContactSection";
+import { data } from "../../data/data";
+import ServiceCard from "../../Components/Cards/ServicesCard";
 
 const Home = () => {
   const featureCards = [
@@ -48,13 +52,19 @@ const Home = () => {
               Drive with Freedom, Start Lessons Today.
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-500 font-medium">
-              We understand that learning to drive can be both exciting and
-              nerve-wracking. Our instructors are not only knowledgeable but
-              also patient and understanding. They create a calm and supportive
-              environment.
+              Welcome to Asia Driving! <br /> If you’re looking to learn how to
+              drive in Japan or convert your foreign license, you’re in the
+              right place. Our team is here to guide you every step of the way —
+              in your language, at your pace, and with total clarity. Whether
+              you’re starting from zero or just need help preparing for the
+              written or driving test, we’re here to help you succeed with
+              confidence. With us, driving in Japan is possible — and
+              easier than you think!
             </p>
-            <RouterLink to="/contact-us" className="">
-              <Button variant="primary">Book A Free Lesson</Button>
+            <RouterLink to="/contact-us">
+              <Button variant="primary" className="cursor-pointer">
+                Book A Free Lesson
+              </Button>
             </RouterLink>
           </div>
 
@@ -126,6 +136,110 @@ const Home = () => {
               />
             </Link>
           ))}
+        </div>
+      </section>
+      <section>
+        <ContactSection />
+      </section>
+      <section className="bg-[var(--secondary-color)] py-16 px-4 md:px-12 lg:px-20">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 items-center gap-12">
+          {/* Left Side: Grid Image Layout */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
+            {/* Tall Left Image */}
+            <img
+              src="/about1.avif"
+              alt="Woman driving"
+              className="sm:col-span-1 h-full sm:h-[500px] object-cover rounded-2xl w-full"
+            />
+
+            {/* Right Column: Stats + Image */}
+            <div className="sm:col-span-1 flex flex-col gap-4">
+              {/* Experience Card */}
+              <div className="bg-white border border-gray-200 rounded-xl shadow-sm text-center p-6 h-[160px] sm:h-[240px] flex flex-col justify-center items-center">
+                <h1 className="text-5xl sm:text-7xl font-bold text-[var(--main-color)]">
+                  10+
+                </h1>
+                <p className="text-base sm:text-lg font-medium text-gray-600 mt-2 text-center">
+                  Years <br /> Experience
+                </p>
+              </div>
+
+              {/* Bottom Right Image */}
+              <img
+                src="/about2.avif"
+                alt="Instructor with student"
+                className="h-[160px] sm:h-[240px] object-cover rounded-2xl w-full"
+              />
+            </div>
+          </div>
+
+          {/* Right Side: Content */}
+          <div className="flex flex-col justify-center items-start">
+            <div className="mb-4">
+              <Button variant={"dotted"}>About Us</Button>
+            </div>
+
+            <h2 className="text-2xl sm:text-4xl font-bold mb-6 leading-tight">
+              Your Trusted Partner <br className="hidden md:block" />
+              for Safe Driving.
+            </h2>
+
+            <p className="text-gray-500 text-base md:text-lg mb-6 max-w-lg">
+              At drive smart, we’re more than just a driving school — we’re your
+              trusted partner on the road to safe and confident driving.
+            </p>
+
+            <ul className="space-y-4 mb-8">
+              {[
+                "Our mission is to empower individuals with the knowledge.",
+                "We are dedicated to providing a superior driving experience.",
+                "Our team comprises highly experienced and certified instructors.",
+                "We recognize that every student learns differently.",
+              ].map((text, index) => (
+                <li
+                  key={index}
+                  className="flex items-start gap-3 text-gray-700"
+                >
+                  <CheckCircleFilled className="text-[var(--main-color)] text-lg mt-1" />
+                  <span>{text}</span>
+                </li>
+              ))}
+            </ul>
+
+            <RouterLink to="/about-us">
+              <Button variant="primary" className="cursor-pointer">
+                Read More
+              </Button>
+            </RouterLink>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 md:px-12 lg:px-20">
+        <div className="flex flex-col gap-20 items-center">
+          <div className="flex flex-col gap-5 items-center">
+            <Button variant={"dotted"}>Our Services</Button>
+            <h1 className="text-2xl sm:text-3xl md:text-6xl font-semibold leading-snug sm:leading-tight">
+              Driving lesson Services
+            </h1>
+            <p className="text-lg text-gray-500">
+              We offer a variety of driving lesson packages to fit your schedule
+              and budget. <br /> Whether you're a complete beginner or looking
+              to refine your existing skills.{" "}
+            </p>
+          </div>
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {data.map((service) => (
+              <RouterLink to={`/services/${service.id}`}>
+                <ServiceCard key={data.id} {...service} />
+              </RouterLink>
+            ))}
+          </div>
+          <RouterLink to="/services">
+            <Button variant="primary" className="cursor-pointer">
+              View all services
+            </Button>
+          </RouterLink>
         </div>
       </section>
     </main>
