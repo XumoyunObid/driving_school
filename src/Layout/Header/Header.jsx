@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
-import logo from "/logo1.svg";
+import logo from "../../assets/logo.JPG"; // or wherever it's located
 import Button from "../../Components/Buttons/MainButton";
 import NavDrawer from "./../../Components/NavDrawer";
 import { MenuOutlined, CloseOutlined } from "@ant-design/icons";

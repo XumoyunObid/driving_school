@@ -9,13 +9,12 @@ const Footer = () => {
       <div className="container mx-auto grid md:grid-cols-4 gap-8">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <div className="bg-[var(--main-color)] rounded-full w-10 h-10 flex items-center justify-center">
-              <span className="text-xl font-bold text-white">🛞</span>
-            </div>
             <div>
-              <h4 className="text-lg font-bold">DRIVER</h4>
+              <h4 className="text-2xl font-bold text-[var(--main-color)]">
+                Asia Driving
+              </h4>
               <p className="text-sm text-gray-400">
-                {isJapanese ? "自動車学校" : "DRIVING SCHOOL"}
+                {isJapanese ? "学校" : "School"}
               </p>
             </div>
           </div>
@@ -26,27 +25,27 @@ const Footer = () => {
             {isJapanese ? "クイックリンク" : "Quick Link"}
           </h4>
           <ul className="space-y-2 text-white font-medium">
-            <li>
+            <li className="hover:text-[var(--main-color)] transition-all">
               <Link to={isJapanese ? "/ja" : "/"}>
                 {isJapanese ? "ホーム" : "Home"}
               </Link>
             </li>
-            <li>
+            <li className="hover:text-[var(--main-color)] transition-all">
               <Link to={isJapanese ? "/ja/about-us" : "/about-us"}>
                 {isJapanese ? "私たちに関しては" : "About Us"}
               </Link>
             </li>
-            <li>
+            <li className="hover:text-[var(--main-color)] transition-all">
               <Link to={isJapanese ? "/ja/services" : "/services"}>
                 {isJapanese ? "サービス" : "Service"}
               </Link>
             </li>
-            <li>
+            <li className="hover:text-[var(--main-color)] transition-all">
               <Link to={isJapanese ? "/ja/contact-us" : "/contact-us"}>
                 {isJapanese ? "お問い合わせ" : "Contact Us"}
               </Link>
             </li>
-            <li>
+            <li className="hover:text-[var(--main-color)] transition-all">
               <Link to={isJapanese ? "/ja/instructors" : "/instructors"}>
                 {isJapanese ? "インストラクター" : "Instructors"}
               </Link>

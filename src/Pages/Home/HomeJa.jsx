@@ -11,9 +11,9 @@ import {
   StarFilled,
 } from "@ant-design/icons";
 import FeatureCard from "../../Components/Cards/FeatureCard";
-import { data } from "../../data/data";
 import ServiceCard from "../../Components/Cards/ServicesCard";
 import ContactSectionJa from "../ContactUs/ContactSectionJa";
+import { dataJa } from "../../data/dataJa";
 
 const HomeJa = () => {
   const featureCards = [
@@ -223,7 +223,7 @@ const HomeJa = () => {
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {data.slice(0, 3).map((service) => (
+            {dataJa.slice(0, 3).map((service) => (
               <RouterLink to={`/services/${service.id}`} key={service.id}>
                 <ServiceCard {...service} />
               </RouterLink>
