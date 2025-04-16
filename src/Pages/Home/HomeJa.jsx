@@ -11,26 +11,26 @@ import {
   StarFilled,
 } from "@ant-design/icons";
 import FeatureCard from "../../Components/Cards/FeatureCard";
-import ContactSection from "../ContactUs/ContactSection";
 import { data } from "../../data/data";
 import ServiceCard from "../../Components/Cards/ServicesCard";
+import ContactSectionJa from "../ContactUs/ContactSectionJa";
 
-const Home = () => {
+const HomeJa = () => {
   const featureCards = [
     {
       icon: <HourglassFilled />,
-      title: "Lifetime support",
-      text: "We understand that everyone has a busy schedule. That's why we offer flexible scheduling options to accommodate your individual needs.",
+      title: "生涯サポート",
+      text: "忙しいスケジュールを理解しているため、個々のニーズに合わせた柔軟なスケジュールオプションを提供します。",
     },
     {
       icon: <CarFilled />,
-      title: "Modern Vehicles",
-      text: "We understand the demands on your time. Our flexible scheduling options are designed to fit your unique requirements and busy lifestyle.",
+      title: "最新の車両",
+      text: "時間の制約を理解しているため、独自のニーズや忙しいライフスタイルに合わせた柔軟なスケジュールオプションを提供します。",
     },
     {
       icon: <BookFilled />,
-      title: "Performance Feedback",
-      text: "We offer various scheduling options to suit your individual needs and availability.",
+      title: "パフォーマンスフィードバック",
+      text: "個々のニーズと空き時間に合わせたスケジュールオプションを提供します。",
     },
   ];
 
@@ -47,26 +47,25 @@ const Home = () => {
         >
           {/* Left Content */}
           <div className="flex-1 flex flex-col gap-8 items-start">
-            <Button variant="dotted">Get Driving Lessons for Skills</Button>
+            <Button variant="dotted">
+              スキルのための運転レッスンを受けよう
+            </Button>
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold leading-snug sm:leading-tight">
-              Get Your Japanese Driver’s License with Asia Driving
+              アジアドライビングで日本の運転免許を取得
             </h1>
             <h2 className="text-xl md:text-3xl leading-snug text-[var(--main-color)]">
-              Driving lessons in English and Spanish for foreigners in Japan
+              日本にいる外国人向けの英語とスペイン語での運転レッスン
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-500 font-medium">
-              Welcome to Asia Driving! <br /> If you’re looking to learn how to
-              drive in Japan or convert your foreign license, you’re in the
-              right place. Our team is here to guide you every step of the way —
-              in your language, at your pace, and with total clarity. Whether
-              you’re starting from zero or just need help preparing for the
-              written or driving test, we’re here to help you succeed with
-              confidence. With us, driving in Japan is possible — and
-              easier than you think!
+              アジアドライビングへようこそ！ <br />
+              日本で運転を学びたい、または外国免許を切り替えたいと考えているなら、ここが正しい場所です。
+              私たちのチームは、あなたのペースで、わかりやすく、あなたの言語でサポートします。
+              ゼロから始める方や、筆記試験や実技試験の準備をしたい方も、私たちが自信を持ってサポートします。
+              日本で運転することは、私たちと一緒なら思っているよりも簡単です！
             </p>
             <RouterLink to="/contact-us">
               <Button variant="primary" className="cursor-pointer">
-                Book A Free Lesson
+                無料レッスンを予約する
               </Button>
             </RouterLink>
           </div>
@@ -87,10 +86,10 @@ const Home = () => {
                 className="w-12 h-12 rounded-full object-cover"
               />
               <div>
-                <p className="font-semibold text-md">Shirley Parker</p>
+                <p className="font-semibold text-md">シャーリー・パーカー</p>
                 <p className="text-[var(--main-color)] text-sm flex items-center gap-1">
                   <CheckCircleOutlined />
-                  Nesting confirmed
+                  巣作り確認済み
                 </p>
               </div>
             </div>
@@ -98,9 +97,7 @@ const Home = () => {
             {/* Bottom Review */}
             <div className="absolute bottom-2 left-2 sm:bottom-4 sm:left-4 w-[90%] sm:w-[300px] bg-white rounded-xl shadow-lg p-4 z-10 float-x">
               <p className="text-sm text-gray-500 mb-3">
-                “I came to Drive Smart feeling nervous and unsure about getting
-                behind the wheel. Thanks to my patient and encouraging
-                instructor.”
+                “私は運転するのが不安で、車に乗ることに自信がありませんでしたが、忍耐強く励ましてくれるインストラクターのおかげで安心できました。”
               </p>
               <div className="flex items-center gap-1 md:gap-3">
                 <img
@@ -109,8 +106,8 @@ const Home = () => {
                   className="w-8 md:w-10 h-8 md:h-10 rounded-full object-cover"
                 />
                 <div>
-                  <p className="font-semibold text-sm">Jenifer Lopez</p>
-                  <p className="text-xs text-gray-500">Driving Student</p>
+                  <p className="font-semibold text-sm">ジェニファー・ロペス</p>
+                  <p className="text-xs text-gray-500">運転生徒</p>
                 </div>
                 <div className="ml-auto text-yellow-400 text-xs md:text-xl">
                   {Array(5).fill(<StarFilled />)}
@@ -160,7 +157,7 @@ const Home = () => {
                   10+
                 </h1>
                 <p className="text-base sm:text-lg font-medium text-gray-600 mt-2 text-center">
-                  Years <br /> Experience
+                  年間の経験
                 </p>
               </div>
 
@@ -176,27 +173,23 @@ const Home = () => {
           {/* Right Side: Content */}
           <div className="flex flex-col justify-center items-start">
             <div className="mb-4">
-              <Button variant={"dotted"}>About Us</Button>
+              <Button variant={"dotted"}>私たちについて</Button>
             </div>
 
             <h2 className="text-2xl sm:text-4xl font-bold mb-6 leading-tight">
-              Your Trusted Partner <br className="hidden md:block" />
-              for Safe Driving.
+              安全運転の信頼できるパートナー
             </h2>
 
             <p className="text-gray-500 text-base md:text-lg mb-6 max-w-lg">
-              At Asia Driving, we’ve been helping foreigners get their Japanese
-              driver’s license for over 10 years. Our team speaks English,
-              Spanish, and Japanese, and we offer personalized driving lessons
-              for all experience levels.
+              アジアドライビングでは、10年以上にわたり外国人の日本での運転免許取得をサポートしてきました。私たちのチームは英語、スペイン語、日本語を話し、すべての経験レベルに合わせた個別の運転レッスンを提供しています。
             </p>
 
             <ul className="space-y-4 mb-8">
               {[
-                "Our mission is to empower individuals with the knowledge.",
-                "We are dedicated to providing a superior driving experience.",
-                "Our team comprises highly experienced and certified instructors.",
-                "We recognize that every student learns differently.",
+                "私たちの使命は、個々の知識を提供することです。",
+                "優れた運転体験を提供することに尽力しています。",
+                "私たちのチームは経験豊富で認定されたインストラクターで構成されています。",
+                "すべての学生が異なる方法で学ぶことを認識しています。",
               ].map((text, index) => (
                 <li
                   key={index}
@@ -210,7 +203,7 @@ const Home = () => {
 
             <RouterLink to="/about-us">
               <Button variant="primary" className="cursor-pointer">
-                Read More
+                詳しく見る
               </Button>
             </RouterLink>
           </div>
@@ -220,35 +213,35 @@ const Home = () => {
       <section className="py-16 px-4 md:px-12 lg:px-20">
         <div className="flex flex-col gap-20 items-center">
           <div className="flex flex-col gap-5 items-center">
-            <Button variant={"dotted"}>Our Services</Button>
+            <Button variant={"dotted"}>サービス</Button>
             <h1 className="text-2xl sm:text-3xl md:text-6xl font-semibold leading-snug sm:leading-tight">
-              Driving lesson Services
+              運転レッスンサービス
             </h1>
             <p className="text-lg text-gray-500">
-              We offer a variety of driving lesson packages to fit your schedule
-              and budget. <br /> Whether you're a complete beginner or looking
-              to refine your existing skills.{" "}
+              私たちは、あなたのスケジュールと予算に合わせたさまざまな運転レッスンパッケージを提供します。{" "}
+              <br /> 初心者の方から既存のスキルを磨きたい方まで対応しています。
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {data.slice(0, 3).map((service) => (
-              <RouterLink to={`/services/${service.id}`}>
-                <ServiceCard key={data.id} {...service} />
+              <RouterLink to={`/services/${service.id}`} key={service.id}>
+                <ServiceCard {...service} />
               </RouterLink>
             ))}
           </div>
+
           <RouterLink to="/services">
             <Button variant="primary" className="cursor-pointer">
-              View all services
+              すべてのサービスを見る
             </Button>
           </RouterLink>
         </div>
       </section>
       <section>
-        <ContactSection />
+        <ContactSectionJa />
       </section>
     </main>
   );
 };
 
-export default Home;
+export default HomeJa;

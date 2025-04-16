@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link as RouterLink, useLocation } from "react-router-dom";
+import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
 import logo from "/logo1.svg";
 import Button from "../../Components/Buttons/MainButton";
 import NavDrawer from "./../../Components/NavDrawer";
@@ -9,14 +9,27 @@ const Header = () => {
   const [show, setShow] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     setShow(false);
+    setIsMenuOpen(false); // close mobile menu on route change
   }, [location]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const toggleLanguage = () => {
+    const isJapanese = location.pathname.startsWith("/ja");
+    const newPath = isJapanese
+      ? location.pathname.replace("/ja", "") || "/"
+      : "/ja" + location.pathname;
+
+    navigate(newPath);
+  };
+
+  const isJapanese = location.pathname.startsWith("/ja");
 
   return (
     <div>
@@ -26,8 +39,8 @@ const Header = () => {
           maxWidth: "var(--breakpoint-lg)",
         }}
       >
-        <RouterLink to="/" className="flex items-center">
-          <img className="w-[70px]" src={logo} alt="" />
+        <RouterLink to={isJapanese ? "/ja" : "/"} className="flex items-center">
+          <img className="w-[70px]" src={logo} alt="Logo" />
         </RouterLink>
 
         <ul className="lg:flex items-center gap-6 hidden">
@@ -35,21 +48,34 @@ const Header = () => {
             <NavDrawer />
           </li>
           <li className="hover:text-[var(--main-color)] text-md">
-            <RouterLink to="about-us" className="text-lg cursor-pointer">
-              About Us
+            <RouterLink
+              to={isJapanese ? "/ja/about-us" : "/about-us"}
+              className="text-lg cursor-pointer"
+            >
+              {isJapanese ? "私たちに関しては" : "About Us"}
             </RouterLink>
           </li>
           <li className="hover:text-[var(--main-color)] text-md">
-            <RouterLink to="/services" className="text-lg cursor-pointer">
-              Services
+            <RouterLink
+              to={isJapanese ? "/ja/services" : "/services"}
+              className="text-lg cursor-pointer"
+            >
+              {isJapanese ? "サービス" : "Services"}
             </RouterLink>
           </li>
           <li className="hover:text-[var(--main-color)] text-md">
-            <RouterLink to="/contact-us" className="text-lg cursor-pointer">
-              Contact Us
+            <RouterLink
+              to={isJapanese ? "/ja/contact-us" : "/contact-us"}
+              className="text-lg cursor-pointer"
+            >
+              {isJapanese ? "お問い合わせ" : "Contact Us"}
             </RouterLink>
           </li>
         </ul>
+
+        <Button onClick={toggleLanguage} variant="dotted" className="ml-40">
+          {isJapanese ? "English" : "日本語"}
+        </Button>
 
         <div className="lg:hidden flex items-center">
           <button
@@ -60,9 +86,12 @@ const Header = () => {
           </button>
         </div>
 
-        <RouterLink to="/contact-us" className="lg:flex hidden">
+        <RouterLink
+          to={isJapanese ? "/ja/contact-us" : "/contact-us"}
+          className="lg:flex hidden"
+        >
           <Button variant={"primary"} className="cursor-pointer">
-            Book A Free Lesson
+            {isJapanese ? "無料レッスンを予約する" : "Book A Free Lesson"}
           </Button>
         </RouterLink>
       </div>
@@ -70,29 +99,36 @@ const Header = () => {
       {isMenuOpen && (
         <div className="lg:hidden flex flex-col items-center mt-4">
           <RouterLink
-            to="about-us"
+            to={isJapanese ? "/ja/about-us" : "/about-us"}
             className="text-lg cursor-pointer mb-2 hover:text-[var(--main-color)]"
           >
-            About Us
+            {isJapanese ? "私たちに関しては" : "About Us"}
           </RouterLink>
           <RouterLink
-            to="/services"
+            to={isJapanese ? "/ja/services" : "/services"}
             className="text-lg cursor-pointer mb-2 hover:text-[var(--main-color)]"
           >
-            Services
+            {isJapanese ? "サービス" : "Services"}
           </RouterLink>
           <RouterLink
-            to="/contact-us"
+            to={isJapanese ? "/ja/contact-us" : "/contact-us"}
             className="text-lg cursor-pointer mb-2 hover:text-[var(--main-color)]"
           >
-            Contact Us
+            {isJapanese ? "お問い合わせ" : "Contact Us"}
           </RouterLink>
           <RouterLink
-            to="/instructors"
+            to={isJapanese ? "/ja/instructors" : "/instructors"}
             className="text-lg cursor-pointer mb-2 hover:text-[var(--main-color)]"
           >
-            Instructors
+            {isJapanese ? "インストラクター" : "Instructors"}
           </RouterLink>
+          <Button
+            onClick={toggleLanguage}
+            variant="dotted"
+            className="mt-2 mb-4"
+          >
+            {isJapanese ? "English" : "日本語"}
+          </Button>
         </div>
       )}
     </div>
