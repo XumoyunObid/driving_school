@@ -26,7 +26,7 @@ const ContactSection = () => {
                 Location
               </h2>
               <p className="text-lg text-gray-500 font-semibold ml-8">
-                123 Fifth Ave, New York, NY 12004. United 9 States
+                2270-1 Hiroda, Konosu, Saitama 365-0005
               </p>
             </div>
             <div className="flex flex-col gap-2">

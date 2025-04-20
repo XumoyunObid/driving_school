@@ -26,8 +26,7 @@ const ContactSectionJa = () => {
                 住所
               </h2>
               <p className="text-lg text-gray-500 font-semibold ml-8">
-                123 フィフス・アヴェニュー、ニューヨーク、NY
-                12004、アメリカ合衆国
+                〒365-0005 埼玉県鴻巣市広田2270-1
               </p>
             </div>
             <div className="flex flex-col gap-2">

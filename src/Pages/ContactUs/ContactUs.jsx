@@ -56,9 +56,9 @@ const ContactUs = () => {
           <EnvironmentOutlined className="text-[var(--main-color)] text-3xl mb-4" />
           <h3 className="text-2xl font-semibold mb-2">Location</h3>
           <p className="text-gray-600 text-lg">
-            123 Fifth Ave, New York, NY 12004
+            2270-1 Hiroda, Konosu, Saitama 365-0005
           </p>
-          <p className="text-gray-600 text-lg">United States</p>
+          <p className="text-gray-600 text-lg">Japan</p>
         </div>
 
         {/* Phone */}

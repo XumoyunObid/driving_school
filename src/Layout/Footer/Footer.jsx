@@ -60,8 +60,8 @@ const Footer = () => {
           <ul className="space-y-2 text-white text-sm">
             <li>
               {isJapanese
-                ? "123 Fifth Ave, ニューヨーク, NY 12004, アメリカ合衆国"
-                : "123 Fifth Ave, New York, NY 12004, United States"}
+                ? "〒365-0005 埼玉県鴻巣市広田2270-1"
+                : "2270-1 Hiroda, Konosu, Saitama 365-0005"}
             </li>
             <li>+555-123-4567</li>
             <li>info@balancepoint.com</li>

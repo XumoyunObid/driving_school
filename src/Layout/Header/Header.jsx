@@ -13,7 +13,7 @@ const Header = () => {
 
   useEffect(() => {
     setShow(false);
-    setIsMenuOpen(false); // close mobile menu on route change
+    setIsMenuOpen(false);
   }, [location]);
 
   const toggleMenu = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../Components/Buttons/MainButton";
-import homeDriver from "/home-driver.avif";
+import homeDriver from "/home-driver.webp";
 import { Link, Link as RouterLink } from "react-router-dom";
 import {
   BookFilled,
@@ -14,6 +14,8 @@ import FeatureCard from "../../Components/Cards/FeatureCard";
 import ContactSection from "../ContactUs/ContactSection";
 import { data } from "../../data/data";
 import ServiceCard from "../../Components/Cards/ServicesCard";
+import rightImg from "/img1.jpg";
+import leftImg from "/img2.jpg";
 
 const Home = () => {
   const featureCards = [
@@ -82,12 +84,12 @@ const Home = () => {
             {/* Top Badge */}
             <div className="absolute top-2 right-2 sm:top-4 sm:right-4 w-[90%] sm:w-auto bg-white rounded-xl shadow-lg flex items-center gap-3 px-4 py-2 z-10 float-y">
               <img
-                src="https://randomuser.me/api/portraits/men/75.jpg"
-                alt="Shirley Parker"
+                src={rightImg}
+                alt="Rami Khoury"
                 className="w-12 h-12 rounded-full object-cover"
               />
               <div>
-                <p className="font-semibold text-md">Shirley Parker</p>
+                <p className="font-semibold text-md">Rami Khoury</p>
                 <p className="text-[var(--main-color)] text-sm flex items-center gap-1">
                   <CheckCircleOutlined />
                   Nesting confirmed
@@ -104,12 +106,12 @@ const Home = () => {
               </p>
               <div className="flex items-center gap-1 md:gap-3">
                 <img
-                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  src={leftImg}
                   alt="Jenifer Lopez"
                   className="w-8 md:w-10 h-8 md:h-10 rounded-full object-cover"
                 />
                 <div>
-                  <p className="font-semibold text-sm">Jenifer Lopez</p>
+                  <p className="font-semibold text-sm">Takumi Sato</p>
                   <p className="text-xs text-gray-500">Driving Student</p>
                 </div>
                 <div className="ml-auto text-yellow-400 text-xs md:text-xl">

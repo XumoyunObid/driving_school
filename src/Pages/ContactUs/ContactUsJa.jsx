@@ -54,7 +54,7 @@ const ContactUsJa = () => {
           <EnvironmentOutlined className="text-[var(--main-color)] text-3xl mb-4" />
           <h3 className="text-2xl font-semibold mb-2">所在地</h3>
           <p className="text-gray-600 text-lg">
-            123 Fifth Ave, New York, NY 12004
+            〒365-0005 埼玉県鴻巣市広田2270-1
           </p>
           <p className="text-gray-600 text-lg">アメリカ合衆国</p>
         </div>
