@@ -58,16 +58,14 @@ const ContactSection = () => {
 
         <div className="col-span-1 bg-white rounded-2xl p-6 shadow-sm border-1 border-gray-300 h-[500px]">
           <h3 className="text-2xl font-semibold mb-4">Send Us a Message</h3>
-          <form className="w-full">
-            <div className="grid grid-cols-2 gap-4 mb-4">
+          <form className="w-full px-4 md:px-0">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div className="mb-4">
                 <input
                   type="text"
                   id="firstName"
                   name="firstName"
                   placeholder="First Name"
-                  // value={formData.firstName}
-                  // onChange={handleChange}
                   required
                   className="w-full p-3 border border-gray-300 rounded-lg bg-white"
                 />
@@ -78,53 +76,49 @@ const ContactSection = () => {
                   id="lastName"
                   name="lastName"
                   placeholder="Last Name"
-                  // value={formData.lastName}
-                  // onChange={handleChange}
                   required
                   className="w-full p-3 border border-gray-300 rounded-lg bg-white"
                 />
               </div>
             </div>
+
             <div className="mb-4">
               <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Email"
-                // value={formData.email}
-                // onChange={handleChange}
                 required
                 className="w-full p-3 border border-gray-300 rounded-lg bg-white"
               />
             </div>
+
             <div className="mb-4">
               <input
                 type="tel"
                 id="mobile"
                 name="mobile"
                 placeholder="Mobile"
-                // value={formData.mobile}
-                // onChange={handleChange}
                 required
                 className="w-full p-3 border border-gray-300 rounded-lg bg-white"
               />
             </div>
-            <div className="mb-4">
+
+            <div className="mb-6">
               <textarea
                 id="message"
                 name="message"
                 placeholder="Message"
-                // value={formData.message}
-                // onChange={handleChange}
                 required
                 rows="4"
                 className="w-full p-3 border border-gray-300 rounded-lg bg-white"
               />
             </div>
+
             <Button
-              variant={"primary"}
+              variant="primary"
               type="submit"
-              className="cursor-pointer"
+              className="w-full md:w-auto cursor-pointer"
             >
               Send Message
             </Button>

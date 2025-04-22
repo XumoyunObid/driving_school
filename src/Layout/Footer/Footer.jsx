@@ -83,20 +83,6 @@ const Footer = () => {
             ? "著作権 2024、による全著作権所有"
             : "Copyright 2024, All Rights Reserved"}
         </p>
-        <div className="flex space-x-4 mt-4 md:mt-0">
-          <a
-            href="#"
-            className="bg-gray-700 hover:bg-gray-600 p-3 rounded-full"
-          >
-            <i className="fab fa-facebook-f text-white"></i>
-          </a>
-          <a
-            href="#"
-            className="bg-gray-700 hover:bg-gray-600 p-3 rounded-full"
-          >
-            <i className="fab fa-twitter text-white"></i>
-          </a>
-        </div>
       </div>
     </footer>
   );
