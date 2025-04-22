@@ -122,13 +122,6 @@ const Header = () => {
           >
             {isJapanese ? "インストラクター" : "Instructors"}
           </RouterLink>
-          <Button
-            onClick={toggleLanguage}
-            variant="dotted"
-            className="mt-2 mb-4"
-          >
-            {isJapanese ? "English" : "日本語"}
-          </Button>
         </div>
       )}
     </div>
