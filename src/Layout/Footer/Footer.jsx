@@ -63,8 +63,14 @@ const Footer = () => {
                 ? "〒365-0005 埼玉県鴻巣市広田2270-1"
                 : "2270-1 Hiroda, Konosu, Saitama 365-0005"}
             </li>
-            <li>+555-123-4567</li>
-            <li>info@balancepoint.com</li>
+            <li>
+              <a href="tel:+818030865131">+818030865131</a>
+            </li>
+            <li>
+              <a href="mailto:asiadriving2025@gmail.com">
+                asiadriving2025@gmail.com
+              </a>
+            </li>
           </ul>
         </div>
       </div>

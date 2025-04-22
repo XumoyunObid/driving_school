@@ -37,7 +37,7 @@ const ContactSectionJa = () => {
                 お電話ください
               </h2>
               <p className="text-lg text-gray-500 font-semibold ml-8">
-                +555-123-4567
+                <a href="tel:+818030865131">+818030865131</a>
               </p>
             </div>
             <div className="flex flex-col gap-2">
@@ -48,7 +48,9 @@ const ContactSectionJa = () => {
                 メール
               </h2>
               <p className="text-lg text-gray-500 font-semibold ml-8">
-                info@balancepoint.com
+                <a href="mailto:asiadriving2025@gmail.com">
+                  asiadriving2025@gmail.com
+                </a>
               </p>
             </div>
           </div>

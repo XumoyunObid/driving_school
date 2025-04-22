@@ -65,29 +65,36 @@ const ContactUs = () => {
         <div className="bg-[var(--secondary-color)] rounded-2xl p-6 shadow-sm border-1 border-gray-300 w-[352px] h-[250px] flex flex-col items-center justify-center">
           <PhoneOutlined className="text-[var(--main-color)] text-3xl mb-4" />
           <h3 className="text-2xl font-semibold mb-2">Give us a call</h3>
-          <p className="text-gray-600 text-lg">+555-123-4567</p>
-          <p className="text-gray-600 text-lg">+666-321-4524</p>
+          <p className="text-gray-600 text-lg">
+            <a href="tel:+818067495131">+818067495131</a>
+          </p>
+          <p className="text-gray-600 text-lg">
+            <a href="tel:+818030865131">+818030865131</a>
+          </p>
         </div>
 
         {/* Email */}
         <div className="mb-20 bg-[var(--secondary-color)] rounded-2xl p-6 shadow-sm border-1 border-gray-300 w-[352px] h-[250px] flex flex-col items-center justify-center">
           <MailOutlined className="text-[var(--main-color)] text-3xl mb-4" />
           <h3 className="text-2xl font-semibold mb-2">Email</h3>
-          <p className="text-gray-600 text-lg">info@balancepoint.com</p>
-          <p className="text-gray-600 text-lg">info@aalancepoint.com</p>
+          <p className="text-gray-600 text-lg">
+            <a href="mailto:asiadriving2025@gmail.com">
+              asiadriving2025@gmail.com
+            </a>
+          </p>
         </div>
       </div>
 
       <div className="grid gap-10 md:grid-cols-2 items-center justify-between">
         <div className="col-span-1 bg-[var(--secondary-color)] rounded-2xl shadow-sm border-1 border-gray-300 h-[500px]">
           <MapContainer
-            center={[40.7128, -74.006]}
-            zoom={13}
+            center={[36.107522, 139.512444]}
+            zoom={15}
             style={{ height: "100%", width: "100%" }}
           >
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[40.7128, -74.006]}>
-              <Popup>Our Location</Popup>
+            <Marker position={[36.107522, 139.512444]}>
+              <Popup>2270-1 Hiroda, Konosu, Saitama 365-0005, Japan</Popup>
             </Marker>
           </MapContainer>
         </div>
