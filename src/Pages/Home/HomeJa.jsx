@@ -39,13 +39,10 @@ const HomeJa = () => {
   return (
     <main className="w-full">
       {/* Hero Section */}
-      <section className="bg-[var(--secondary-color)] mx-6 my-6 rounded-4xl px-4 md:px-10">
+      <section className="bg-[var(--secondary-color)] mx-4 sm:mx-6 md:mx-8 lg:mx-20 my-6 rounded-4xl px-4 sm:px-6 md:px-8 lg:px-20">
         <div
           className="flex flex-col md:flex-row items-center justify-between gap-20 py-12"
-          style={{
-            maxWidth: "var(--breakpoint-lg)",
-            margin: "0 auto",
-          }}
+          style={{ maxWidth: "var(--breakpoint-lg)", margin: "0 auto" }}
         >
           {/* Left Content */}
           <div className="flex-1 flex flex-col gap-8 items-start">
@@ -59,9 +56,7 @@ const HomeJa = () => {
             <p className="text-base sm:text-lg md:text-xl text-gray-500 font-medium">
               アジアドライビングへようこそ！
               <br />
-              日本での運転を学びたい方や、外国の免許を切り替えたい方を全力でサポートします。
-              言語、スピード、内容すべてあなたに合わせて、合格までの道のりを明確に導きます。
-              初心者でも、筆記試験や実技試験の準備でも、私たちが全力でお手伝いします。
+              日本での運転を学びたい方や、外国の免許を切り替えたい方を全力でサポートします。言語、スピード、内容すべてあなたに合わせて、合格までの道のりを明確に導きます。初心者でも、筆記試験や実技試験の準備でも、私たちが全力でお手伝いします。
             </p>
             <RouterLink to="/contact-us-ja">
               <Button variant="primary" className="cursor-pointer">
@@ -75,7 +70,7 @@ const HomeJa = () => {
             <img
               src={homeDriver}
               alt="Driver"
-              className="rounded-xl object-cover w-[450px]  md:w-[600px] h-[450px] md:h-[600px] mx-auto"
+              className="rounded-xl object-cover w-[450px] md:w-[600px] h-[450px] md:h-[600px] mx-auto"
             />
             <div className="absolute top-2 right-2 sm:top-4 sm:right-4 w-[90%] sm:w-auto bg-white rounded-xl shadow-lg flex items-center gap-3 px-4 py-2 z-10 float-y">
               <img
@@ -117,11 +112,8 @@ const HomeJa = () => {
 
       {/* Features Section */}
       <section
-        className="bg-white px-5 py-12 md:py-20 flex items-center justify-center"
-        style={{
-          maxWidth: "var(--breakpoint-lg)",
-          margin: "0 auto",
-        }}
+        className="bg-white px-4 sm:px-6 md:px-8 lg:px-20 py-12 md:py-20 flex items-center justify-center"
+        style={{ maxWidth: "var(--breakpoint-lg)", margin: "0 auto" }}
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
           {featureCards.map((card, index) => (
@@ -137,7 +129,7 @@ const HomeJa = () => {
       </section>
 
       {/* About Section */}
-      <section className="bg-[var(--secondary-color)] py-16 px-4 md:px-12 lg:px-20">
+      <section className="bg-[var(--secondary-color)] py-16 px-4 sm:px-6 md:px-8 lg:px-20">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 items-center gap-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
             <img
@@ -171,8 +163,7 @@ const HomeJa = () => {
               ドライビングパートナー
             </h2>
             <p className="text-gray-500 text-base md:text-lg mb-6 max-w-lg">
-              アジアドライビングでは、10年以上にわたり外国人の免許取得をサポートしています。
-              英語、スペイン語、日本語に対応し、個別指導のレッスンを提供しています。
+              アジアドライビングでは、10年以上にわたり外国人の免許取得をサポートしています。英語、スペイン語、日本語に対応し、個別指導のレッスンを提供しています。
             </p>
             <ul className="space-y-4 mb-8">
               {[
@@ -200,7 +191,7 @@ const HomeJa = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 px-4 md:px-12 lg:px-20">
+      <section className="py-16 px-4 sm:px-6 md:px-8 lg:px-20">
         <div className="flex flex-col gap-20 items-center">
           <div className="flex flex-col gap-5 items-center">
             <Button variant={"dotted"}>サービス一覧</Button>

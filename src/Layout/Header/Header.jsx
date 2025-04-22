@@ -43,7 +43,7 @@ const Header = () => {
           <img className="w-[70px]" src={logo} alt="Logo" />
         </RouterLink>
 
-        <ul className="lg:flex items-center gap-6 hidden">
+        <ul className="lg:flex items-center gap-6 hidden sm:hidden md:flex">
           <li>
             <NavDrawer />
           </li>
@@ -73,11 +73,15 @@ const Header = () => {
           </li>
         </ul>
 
-        <Button onClick={toggleLanguage} variant="dotted" className="ml-40">
+        <Button
+          onClick={toggleLanguage}
+          variant="dotted"
+          className="ml-6 md:ml-10"
+        >
           {isJapanese ? "English" : "日本語"}
         </Button>
 
-        <div className="lg:hidden flex items-center">
+        <div className="md:hidden flex items-center">
           <button
             onClick={toggleMenu}
             className="text-lg cursor-pointer hover:text-[var(--main-color)]"
@@ -96,8 +100,9 @@ const Header = () => {
         </RouterLink>
       </div>
 
+      {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden flex flex-col items-center mt-4">
+        <div className="md:hidden flex flex-col items-center mt-4">
           <RouterLink
             to={isJapanese ? "/ja/about-us" : "/about-us"}
             className="text-lg cursor-pointer mb-2 hover:text-[var(--main-color)]"

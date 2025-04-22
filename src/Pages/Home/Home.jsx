@@ -39,16 +39,16 @@ const Home = () => {
   return (
     <main className="w-full">
       {/* Hero Section */}
-      <section className="bg-[var(--secondary-color)] mx-6 my-6 rounded-4xl px-4 md:px-10">
+      <section className="bg-[var(--secondary-color)] mx-4 sm:mx-6 my-6 rounded-4xl px-4 md:px-10">
         <div
-          className="flex flex-col md:flex-row items-center justify-between gap-20 py-12"
+          className="flex flex-col md:flex-row items-center justify-between gap-10 sm:gap-20 py-12"
           style={{
             maxWidth: "var(--breakpoint-lg)",
             margin: "0 auto",
           }}
         >
           {/* Left Content */}
-          <div className="flex-1 flex flex-col gap-8 items-start">
+          <div className="flex-1 flex flex-col gap-6 sm:gap-8 items-start">
             <Button variant="dotted">Get Driving Lessons for Skills</Button>
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold leading-snug sm:leading-tight">
               Get Your Japanese Driver’s License with Asia Driving
@@ -78,7 +78,7 @@ const Home = () => {
             <img
               src={homeDriver}
               alt="Driver"
-              className="rounded-xl object-cover w-[450px]  md:w-[600px] h-[450px] md:h-[600px] mx-auto"
+              className="rounded-xl object-cover w-full max-w-[600px] h-[400px] sm:h-[450px] md:h-[600px] mx-auto"
             />
 
             {/* Top Badge */}
@@ -115,7 +115,9 @@ const Home = () => {
                   <p className="text-xs text-gray-500">Driving Student</p>
                 </div>
                 <div className="ml-auto text-yellow-400 text-xs md:text-xl">
-                  {Array(5).fill(<StarFilled />)}
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <StarFilled key={i} />
+                  ))}
                 </div>
               </div>
             </div>
@@ -143,20 +145,17 @@ const Home = () => {
           ))}
         </div>
       </section>
+
+      {/* About Section */}
       <section className="bg-[var(--secondary-color)] py-16 px-4 md:px-12 lg:px-20">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 items-center gap-12">
-          {/* Left Side: Grid Image Layout */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
-            {/* Tall Left Image */}
             <img
               src="/about1.avif"
               alt="Woman driving"
               className="sm:col-span-1 h-full sm:h-[500px] object-cover rounded-2xl w-full"
             />
-
-            {/* Right Column: Stats + Image */}
             <div className="sm:col-span-1 flex flex-col gap-4">
-              {/* Experience Card */}
               <div className="bg-white border border-gray-200 rounded-xl shadow-sm text-center p-6 h-[160px] sm:h-[240px] flex flex-col justify-center items-center">
                 <h1 className="text-5xl sm:text-7xl font-bold text-[var(--main-color)]">
                   10+
@@ -165,8 +164,6 @@ const Home = () => {
                   Years <br /> Experience
                 </p>
               </div>
-
-              {/* Bottom Right Image */}
               <img
                 src="/about2.avif"
                 alt="Instructor with student"
@@ -175,24 +172,20 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Right Side: Content */}
           <div className="flex flex-col justify-center items-start">
             <div className="mb-4">
               <Button variant={"dotted"}>About Us</Button>
             </div>
-
             <h2 className="text-2xl sm:text-4xl font-bold mb-6 leading-tight">
-              Your Trusted Partner <br className="hidden md:block" />
-              for Safe Driving.
+              Your Trusted Partner <br className="hidden md:block" /> for Safe
+              Driving.
             </h2>
-
             <p className="text-gray-500 text-base md:text-lg mb-6 max-w-lg">
               At Asia Driving, we’ve been helping foreigners get their Japanese
               driver’s license for over 10 years. Our team speaks English,
               Spanish, and Japanese, and we offer personalized driving lessons
               for all experience levels.
             </p>
-
             <ul className="space-y-4 mb-8">
               {[
                 "Our mission is to empower individuals with the knowledge.",
@@ -209,7 +202,6 @@ const Home = () => {
                 </li>
               ))}
             </ul>
-
             <RouterLink to="/about-us">
               <Button variant="primary" className="cursor-pointer">
                 Read More
@@ -219,9 +211,10 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Services Section */}
       <section className="py-16 px-4 md:px-12 lg:px-20">
         <div className="flex flex-col gap-20 items-center">
-          <div className="flex flex-col gap-5 items-center">
+          <div className="flex flex-col gap-5 items-center text-center">
             <Button variant={"dotted"}>Our Services</Button>
             <h1 className="text-2xl sm:text-3xl md:text-6xl font-semibold leading-snug sm:leading-tight">
               Driving lesson Services
@@ -229,13 +222,13 @@ const Home = () => {
             <p className="text-lg text-gray-500">
               We offer a variety of driving lesson packages to fit your schedule
               and budget. <br /> Whether you're a complete beginner or looking
-              to refine your existing skills.{" "}
+              to refine your existing skills.
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {data.slice(0, 3).map((service) => (
-              <RouterLink to={`/services/${service.id}`}>
-                <ServiceCard key={data.id} {...service} />
+              <RouterLink key={service.id} to={`/services/${service.id}`}>
+                <ServiceCard {...service} />
               </RouterLink>
             ))}
           </div>
@@ -246,6 +239,7 @@ const Home = () => {
           </RouterLink>
         </div>
       </section>
+
       <section>
         <ContactSection />
       </section>
