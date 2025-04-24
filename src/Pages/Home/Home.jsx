@@ -107,7 +107,7 @@ const Home = () => {
               <div className="flex items-center gap-1 md:gap-3">
                 <img
                   src={leftImg}
-                  alt="Jenifer Lopez"
+                  alt="Takumi Sato"
                   className="w-8 md:w-10 h-8 md:h-10 rounded-full object-cover"
                 />
                 <div>

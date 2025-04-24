@@ -71,6 +71,9 @@ const ContactUs = () => {
           <p className="text-gray-600 text-lg">
             <a href="tel:+818030865131">+818030865131</a>
           </p>
+          <p className="text-gray-600 text-lg">
+            <a href="tel:+818067495131">+818067495131</a>
+          </p>
         </div>
 
         {/* Email */}
