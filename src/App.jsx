@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import MainLayout from "./Layout/MainLayout";
 import Home from "./Pages/Home/Home";
 import HomeJa from "./Pages/Home/HomeJa";
@@ -13,8 +13,23 @@ import InstructorsJa from "./Pages/Instructors/InstructorsJa";
 import SingleService from "./Pages/Services/SingleService";
 import SingleServiceJa from "./Pages/Services/SingleServiceJa";
 import ScrollToTop from "./Components/useScrollToTop";
+import ReactGA from "react-ga4";
+import { useEffect } from "react";
 
+const TRACKING_ID = "G-NM8ZJWGY69";
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.initialize(TRACKING_ID);
+  }, []);
+
+  useEffect(() => {
+    ReactGA.send({
+      hitType: "pageview",
+      page: location.pathname + location.search,
+    });
+  }, [location]);
   return (
     <>
       <ScrollToTop />
