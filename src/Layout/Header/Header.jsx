@@ -95,7 +95,7 @@ const Header = () => {
           className="lg:flex hidden"
         >
           <Button variant={"primary"} className="cursor-pointer">
-            {isJapanese ? "無料レッスンを予約する" : "Book A Free Lesson"}
+            {isJapanese ? "レッスンを予約する" : "Book A Lesson"}
           </Button>
         </RouterLink>
       </div>

@@ -68,7 +68,7 @@ const Home = () => {
             </p>
             <RouterLink to="/contact-us">
               <Button variant="primary" className="cursor-pointer">
-                Book A Free Lesson
+                Book A Lesson
               </Button>
             </RouterLink>
           </div>
@@ -100,7 +100,7 @@ const Home = () => {
             {/* Bottom Review */}
             <div className="absolute bottom-2 left-2 sm:bottom-4 sm:left-4 w-[90%] sm:w-[300px] bg-white rounded-xl shadow-lg p-4 z-10 float-x">
               <p className="text-sm text-gray-500 mb-3">
-                “I came to Drive Smart feeling nervous and unsure about getting
+                “I came to Asia Driving feeling nervous and unsure about getting
                 behind the wheel. Thanks to my patient and encouraging
                 instructor.”
               </p>
@@ -151,7 +151,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 items-center gap-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
             <img
-              src="/about1.avif"
+              src="/image3.JPG"
               alt="Woman driving"
               className="sm:col-span-1 h-full sm:h-[500px] object-cover rounded-2xl w-full"
             />

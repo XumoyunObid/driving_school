@@ -60,7 +60,7 @@ const HomeJa = () => {
             </p>
             <RouterLink to="/contact-us-ja">
               <Button variant="primary" className="cursor-pointer">
-                無料レッスンを予約
+                レッスンを予約する
               </Button>
             </RouterLink>
           </div>
@@ -89,12 +89,13 @@ const HomeJa = () => {
 
             <div className="absolute bottom-2 left-2 sm:bottom-4 sm:left-4 w-[90%] sm:w-[300px] bg-white rounded-xl shadow-lg p-4 z-10 float-x">
               <p className="text-sm text-gray-500 mb-3">
-                「運転に不安があった私でも、優しくて忍耐強いインストラクターのおかげで自信がつきました。」
+                「アジアドライビングに来たときは、運転することに不安と緊張を感じていましたが、忍耐強く励ましてくれたインストラクターのおかげで自信が持てるようになりました。」
               </p>
+
               <div className="flex items-center gap-1 md:gap-3">
                 <img
                   src={leftImg}
-                  alt="Jenifer Lopez"
+                  alt="Takumi Sato"
                   className="w-8 md:w-10 h-8 md:h-10 rounded-full object-cover"
                 />
                 <div>
@@ -133,7 +134,7 @@ const HomeJa = () => {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 items-center gap-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
             <img
-              src="/about1.avif"
+              src="/image3.JPG"
               alt="運転中の女性"
               className="sm:col-span-1 h-full sm:h-[500px] object-cover rounded-2xl w-full"
             />

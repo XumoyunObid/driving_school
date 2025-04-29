@@ -1,6 +1,6 @@
 import React from "react";
 import ContactSection from "../ContactUs/ContactSection";
-import mainimg from "/aboutmain.avif";
+import img from "/image1.jpeg";
 
 const AboutUs = () => {
   return (
@@ -59,7 +59,7 @@ const AboutUs = () => {
           {/* Image Section */}
           <div className="w-full md:w-1/2">
             <img
-              src={mainimg}
+              src={img}
               alt="Instructor teaching"
               className="rounded-2xl object-cover w-full h-full md:h-[600px]"
             />
