@@ -27,13 +27,50 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      mobile: "",
-      message: "",
-    });
+    // Prepare form data
+    const formDataToSend = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      mobile: formData.mobile,
+      message: formData.message,
+    };
+
+    fetch(
+      "https://script.google.com/macros/s/AKfycbzWD50TpS5anPdxGopZ0Tu2-LwVSOtpyuAhachUH4LkTpC5IytSPxoMSfvmvzxe18HRqQ/exec",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          mobile: formData.mobile,
+          message: formData.message,
+        }).toString(),
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.result === "success") {
+          setFormData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            mobile: "",
+            message: "",
+          });
+          alert("Your message has been sent successfully!");
+        } else {
+          alert("There was an error sending your message.");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("Error submitting the form.");
+      });
   };
 
   return (
