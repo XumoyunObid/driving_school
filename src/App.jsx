@@ -8,13 +8,13 @@ import ContactUs from "./Pages/ContactUs/ContactUs";
 import ContactUsJa from "./Pages/ContactUs/ContactUsJa";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import AboutUsJa from "./Pages/AboutUs/AboutUsJa";
-import Instructors from "./Pages/Instructors/Instructors";
-import InstructorsJa from "./Pages/Instructors/InstructorsJa";
 import SingleService from "./Pages/Services/SingleService";
 import SingleServiceJa from "./Pages/Services/SingleServiceJa";
 import ScrollToTop from "./Components/useScrollToTop";
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
+import News from "./Pages/Instructors/Instructors";
+import NewsJa from "./Pages/Instructors/InstructorsJa";
 
 const TRACKING_ID = "G-NM8ZJWGY69";
 function App() {
@@ -41,7 +41,7 @@ function App() {
           <Route path="services/:id" element={<SingleService />} />
           <Route path="about-us" element={<AboutUs />} />
           <Route path="contact-us" element={<ContactUs />} />
-          <Route path="instructors" element={<Instructors />} />
+          <Route path="news" element={<News />} />
         </Route>
 
         {/* Japanese Routes */}
@@ -51,7 +51,7 @@ function App() {
           <Route path="services/:id" element={<SingleServiceJa />} />
           <Route path="about-us" element={<AboutUsJa />} />
           <Route path="contact-us" element={<ContactUsJa />} />
-          <Route path="instructors" element={<InstructorsJa />} />
+          <Route path="news" element={<NewsJa />} />
         </Route>
       </Routes>
     </>

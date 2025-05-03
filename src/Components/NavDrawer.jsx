@@ -51,10 +51,10 @@ const NavDrawer = () => {
       label: (
         <div className="hover:text-[var(--main-color)] text-md">
           <RouterLink
-            to={isJapanese ? "/ja/instructors" : "/instructors"}
+            to={isJapanese ? "/ja/news" : "/news"}
             className="text-lg cursor-pointer"
           >
-            {isJapanese ? "インストラクター" : "Instructors"}
+            {isJapanese ? "インストラクター" : "News"}
           </RouterLink>
         </div>
       ),

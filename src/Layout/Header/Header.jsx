@@ -122,10 +122,10 @@ const Header = () => {
             {isJapanese ? "お問い合わせ" : "Contact Us"}
           </RouterLink>
           <RouterLink
-            to={isJapanese ? "/ja/instructors" : "/instructors"}
+            to={isJapanese ? "/ja/news" : "/news"}
             className="text-lg cursor-pointer mb-2 hover:text-[var(--main-color)]"
           >
-            {isJapanese ? "インストラクター" : "Instructors"}
+            {isJapanese ? "インストラクター" : "News"}
           </RouterLink>
         </div>
       )}
