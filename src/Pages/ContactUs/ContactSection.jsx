@@ -49,7 +49,7 @@ const ContactSection = () => {
               </h2>
               <p className="text-lg text-gray-500 font-semibold ml-8">
                 <a href="mailto:asiadriving2025@gmail.com">
-                  asiadriving2025@gmail.com
+                  asiadrivelicense.info@gmail.com
                 </a>
               </p>
             </div>

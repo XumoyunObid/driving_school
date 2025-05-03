@@ -79,7 +79,7 @@ const ContactUsJa = () => {
           <h3 className="text-2xl font-semibold mb-2">メールアドレス</h3>
           <p className="text-gray-600 text-lg">
             <a href="mailto:asiadriving2025@gmail.com">
-              asiadriving2025@gmail.com
+            asiadrivelicense.info@gmail.com
             </a>
           </p>
         </div>
