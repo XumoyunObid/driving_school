@@ -48,7 +48,7 @@ const ContactSection = () => {
                 Email
               </h2>
               <p className="text-lg text-gray-500 font-semibold ml-8">
-                <a href="mailto:asiadriving2025@gmail.com">
+                <a href="mailto:asiadrivelicense.info@gmail.com">
                   asiadrivelicense.info@gmail.com
                 </a>
               </p>
