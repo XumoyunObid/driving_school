@@ -15,6 +15,9 @@ import ReactGA from "react-ga4";
 import { useEffect } from "react";
 import News from "./Pages/Instructors/Instructors";
 import NewsJa from "./Pages/Instructors/InstructorsJa";
+import BlogsEn from "./Pages/Blogs/BogsEn";
+import BlogsJa from "./Pages/Blogs/BlogsJa";
+import BlogDetail from "./Pages/Blogs/BlogDetail";
 
 const TRACKING_ID = "G-NM8ZJWGY69";
 function App() {
@@ -42,6 +45,8 @@ function App() {
           <Route path="about-us" element={<AboutUs />} />
           <Route path="contact-us" element={<ContactUs />} />
           <Route path="news" element={<News />} />
+          <Route path="blogs" element={<BlogsEn />} />
+          <Route path="blogs/:id" element={<BlogDetail />} />
         </Route>
 
         {/* Japanese Routes */}
@@ -52,6 +57,8 @@ function App() {
           <Route path="about-us" element={<AboutUsJa />} />
           <Route path="contact-us" element={<ContactUsJa />} />
           <Route path="news" element={<NewsJa />} />
+          <Route path="blogs" element={<BlogsJa />} />
+          <Route path="blogs/:id" element={<BlogDetail />} />
         </Route>
       </Routes>
     </>

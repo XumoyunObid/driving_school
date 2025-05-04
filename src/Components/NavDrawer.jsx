@@ -60,6 +60,19 @@ const NavDrawer = () => {
       ),
       key: "3",
     },
+    {
+      label: (
+        <div className="hover:text-[var(--main-color)] text-md">
+          <RouterLink
+            to={isJapanese ? "/ja/blogs" : "/blogs"}
+            className="text-lg cursor-pointer"
+          >
+            {isJapanese ? "ブログ" : "Blogs"}
+          </RouterLink>
+        </div>
+      ),
+      key: "4",
+    },
   ];
 
   return (
