@@ -26,7 +26,7 @@ const blogPosts = [
     id: "driving-school",
     title: "5 Tips for Choosing the Best Driving School in Saitama",
     tag: "Driving School Saitama | School Comparison",
-    image: "/service4.webp",
+    image: "/image2.jpg",
     alt: "Choosing a driving school in Saitama",
     summary:
       "Choosing the right driving school ensures smooth license acquisition. Consider multilingual instructors, flexible schedules, reputation, and cost. Here are five tips to find the best school.",
@@ -36,7 +36,7 @@ const blogPosts = [
     title:
       "Complete Guide to Cost, Duration & Steps for Getting a Driver’s License in Japan",
     tag: "Japan License Cost | School Fees & Process",
-    image: "/service2.avif",
+    image: "/image5.jpeg",
     alt: "Cost and steps to get a license in Japan",
     summary:
       "Wondering about cost and time for a Japanese driver’s license? This post details every step—from written test to graduation—and average fees in Saitama and nationwide.",

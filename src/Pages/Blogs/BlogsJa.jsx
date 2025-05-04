@@ -25,7 +25,7 @@ const blogPosts = [
     id: "driving-school",
     title: "埼玉でおすすめの自動車教習所を選ぶための5つのポイント",
     tag: "埼玉 教習所 | 教習所 比較",
-    image: "/service4.webp",
+    image: "/image2.jpg",
     alt: "埼玉の教習所選び",
     summary:
       "適切な教習所を選ぶことで、スムーズに免許取得を進めることができます。多言語対応、柔軟なスケジュール、評判、料金などを考慮して、最適な教習所を見つけるための5つのポイントを紹介します。",
@@ -34,7 +34,7 @@ const blogPosts = [
     id: "cost-guide",
     title: "日本の運転免許取得にかかる費用・期間・ステップ【完全ガイド】",
     tag: "日本 免許費用 | 教習所 費用・プロセス",
-    image: "/service2.avif",
+    image: "/image5.jpeg",
     alt: "日本の免許取得の費用とステップ",
     summary:
       "日本で運転免許を取得するには、どれくらいの費用と期間がかかるのでしょうか？本記事では、学科試験から卒業までのステップと、埼玉や全国の平均費用を解説します。",
@@ -43,7 +43,7 @@ const blogPosts = [
 
 const BlogsEn = () => {
   const navigate = useNavigate();
-  const handleClick = (id) => navigate(`/blogs/${id}`);
+  const handleClick = (id) => navigate(`/ja/blogs/${id}`);
 
   return (
     <div className="px-6 py-10 max-w-6xl mx-auto text-gray-800">
