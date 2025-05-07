@@ -221,7 +221,7 @@ const HomeJa = () => {
                 </li>
               ))}
             </ul>
-            <RouterLink to="/about-us-ja">
+            <RouterLink to="/ja/about-us">
               <Button variant="primary" className="cursor-pointer">
                 詳細を見る
               </Button>
