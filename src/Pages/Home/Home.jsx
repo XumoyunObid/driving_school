@@ -125,26 +125,65 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section
-        className="bg-white px-5 py-12 md:py-20 flex items-center justify-center"
-        style={{
-          maxWidth: "var(--breakpoint-lg)",
-          margin: "0 auto",
-        }}
-      >
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
-          {featureCards.map((card, index) => (
-            <Link key={index} to="/contact-us">
-              <FeatureCard
-                icon={card.icon}
-                title={card.title}
-                text={card.text}
-              />
+      <div className="my-20 text-center px-5">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6">Course Plans</h2>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-12 text-lg">
+          Choose the plan that fits your needs. Whether you want full support
+          with accommodation and food, or a budget option, we’ve got you
+          covered.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {[
+            {
+              title: "Plan A",
+              duration: "3 months",
+              support: ["Written test", "Driving test"],
+              accommodation: "No",
+              food: "No",
+              price: "¥186,000",
+            },
+            {
+              title: "Plan B (1 month)",
+              duration: "1 month",
+              support: ["Written test", "Driving test"],
+              accommodation: "No (¥3,000/day if needed)",
+              food: "No",
+              price: "¥250,000",
+            },
+            {
+              title: "Plan C (2 weeks)",
+              duration: "2 weeks",
+              support: ["Written test", "Driving test"],
+              accommodation: "Yes",
+              food: "Yes",
+              price: "¥380,000",
+            },
+          ].map((plan, index) => (
+            <Link to="/contact-us">
+              <div
+                key={index}
+                className="bg-[var(--secondary-color)] h-[300px] rounded-2xl p-6 shadow-sm border-1 border-gray-300"
+              >
+                <h3 className="text-2xl font-semibold mb-2">{plan.title}</h3>
+                <p className="text-lg text-gray-700 mb-2">
+                  Duration: {plan.duration}
+                </p>
+                <p className="text-lg text-gray-700 mb-2">
+                  Support: {plan.support.join(", ")}
+                </p>
+                <p className="text-lg text-gray-700 mb-2">
+                  Accommodation: {plan.accommodation}
+                </p>
+                <p className="text-lg text-gray-700 mb-2">Food: {plan.food}</p>
+                <p className="text-xl font-bold text-[var(--main-color)] mb-4">
+                  {plan.price}
+                </p>
+              </div>
             </Link>
           ))}
         </div>
-      </section>
+      </div>
 
       {/* About Section */}
       <section className="bg-[var(--secondary-color)] py-16 px-4 md:px-12 lg:px-20">
@@ -211,65 +250,26 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="my-20 text-center px-5">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">Course Plans</h2>
-        <p className="text-gray-600 max-w-2xl mx-auto mb-12 text-lg">
-          Choose the plan that fits your needs. Whether you want full support
-          with accommodation and food, or a budget option, we’ve got you
-          covered.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {[
-            {
-              title: "Plan A",
-              duration: "3 months",
-              support: ["Written test", "Driving test"],
-              accommodation: "No",
-              food: "No",
-              price: "¥186,000",
-            },
-            {
-              title: "Plan B (1 month)",
-              duration: "1 month",
-              support: ["Written test", "Driving test"],
-              accommodation: "No (¥3,000/day if needed)",
-              food: "No",
-              price: "¥250,000",
-            },
-            {
-              title: "Plan C (2 weeks)",
-              duration: "2 weeks",
-              support: ["Written test", "Driving test"],
-              accommodation: "Yes",
-              food: "Yes",
-              price: "¥380,000",
-            },
-          ].map((plan, index) => (
-            <Link to="/contact-us">
-              <div
-                key={index}
-                className="bg-[var(--secondary-color)] h-[300px] rounded-2xl p-6 shadow-sm border-1 border-gray-300"
-              >
-                <h3 className="text-2xl font-semibold mb-2">{plan.title}</h3>
-                <p className="text-lg text-gray-700 mb-2">
-                  Duration: {plan.duration}
-                </p>
-                <p className="text-lg text-gray-700 mb-2">
-                  Support: {plan.support.join(", ")}
-                </p>
-                <p className="text-lg text-gray-700 mb-2">
-                  Accommodation: {plan.accommodation}
-                </p>
-                <p className="text-lg text-gray-700 mb-2">Food: {plan.food}</p>
-                <p className="text-xl font-bold text-[var(--main-color)] mb-4">
-                  {plan.price}
-                </p>
-              </div>
+      {/* Features Section */}
+      <section
+        className="bg-white px-5 py-12 md:py-20 flex items-center justify-center"
+        style={{
+          maxWidth: "var(--breakpoint-lg)",
+          margin: "0 auto",
+        }}
+      >
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+          {featureCards.map((card, index) => (
+            <Link key={index} to="/contact-us">
+              <FeatureCard
+                icon={card.icon}
+                title={card.title}
+                text={card.text}
+              />
             </Link>
           ))}
         </div>
-      </div>
+      </section>
 
       {/* Services Section */}
       <section className="bg-[var(--secondary-color)] py-16 px-4 md:px-12 lg:px-20">
