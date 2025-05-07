@@ -103,7 +103,7 @@ const ContactUs = () => {
           <PhoneOutlined className="text-[var(--main-color)] text-3xl mb-4" />
           <h3 className="text-2xl font-semibold mb-2">Give us a call</h3>
           <p className="text-gray-600 text-lg">
-            <a href="tel:+818067495131">+818067495131</a>
+            <a href="tel:+818070527082">+818070527082</a>
           </p>
           <p className="text-gray-600 text-lg">
             <a href="tel:+818030865131">+818030865131</a>

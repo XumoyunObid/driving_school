@@ -53,9 +53,7 @@ const ContactUsJa = () => {
         <div className="bg-[var(--secondary-color)] rounded-2xl p-6 shadow-sm border-1 border-gray-300 w-[352px] h-[250px] flex flex-col items-center justify-center">
           <EnvironmentOutlined className="text-[var(--main-color)] text-3xl mb-4" />
           <h3 className="text-2xl font-semibold mb-2">所在地</h3>
-          <p className="text-gray-600 text-lg">
-            〒365-0005 埼玉県鴻巣市広田2270-1
-          </p>
+          <p className="text-gray-600 text-lg">埼玉県鴻巣市広田2270番地1</p>
           <p className="text-gray-600 text-lg">アメリカ合衆国</p>
         </div>
 
@@ -69,7 +67,7 @@ const ContactUsJa = () => {
             <a href="tel:+818030865131">+818030865131</a>
           </p>
           <p className="text-gray-600 text-lg">
-            <a href="tel:+818067495131">+818067495131</a>
+            <a href="tel:+818070527082">+818070527082</a>
           </p>
         </div>
 

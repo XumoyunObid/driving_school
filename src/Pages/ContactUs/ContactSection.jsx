@@ -37,7 +37,7 @@ const ContactSection = () => {
                 Give us a call
               </h2>
               <p className="text-lg text-gray-500 font-semibold ml-8">
-                <a href="tel:+818030865131">+818067495131</a>
+                <a href="tel:+818070527082">+818070527082</a>
               </p>
             </div>
             <div className="flex flex-col gap-2">
