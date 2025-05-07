@@ -28,7 +28,7 @@ export const data = [
     title: "On-road training near test centers",
     description:
       "Sharpen your skills to detect hazards, stay composed during challenges, and employ defensive driving strategies.",
-    image: "/service4.webp",
+    image: "/image8.JPEG",
     text: "We offer on-road driving lessons near official test centers to give you the advantage of familiarizing yourself with the test routes. This location-specific training helps you navigate real-world conditions while building the skills and confidence needed to pass your driving test with flying colors.",
   },
   {
@@ -44,7 +44,7 @@ export const data = [
     title: "Personal support during the application process",
     description:
       "Train to detect potential hazards, stay tranquil in adversity, and employ defensive driving methods effectively.",
-    image: "/service6.avif",
+    image: "/image12.JPEG",
     text: "Navigating the application process for a driver’s license in Japan can be overwhelming, but you don’t have to do it alone. Our personal support service ensures you're guided through every stage, from filling out paperwork to meeting deadlines, making the entire process as smooth and stress-free as possible.",
   },
 ];

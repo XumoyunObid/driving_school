@@ -83,6 +83,62 @@ const ContactUsJa = () => {
         </div>
       </div>
 
+      <div className="mb-20 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6">コースプラン</h2>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-12 text-lg">
+          宿泊と食事付きのサポートが充実したプランから、予算重視のプランまで、あなたに合ったプランをお選びください。
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {[
+            {
+              title: "プランA",
+              duration: "3ヶ月",
+              support: ["筆記試験", "実技試験"],
+              accommodation: "なし",
+              food: "なし",
+              price: "¥186,000",
+            },
+            {
+              title: "プランB（1ヶ月）",
+              duration: "1ヶ月",
+              support: ["筆記試験", "実技試験"],
+              accommodation: "なし（希望の場合：¥3,000/日）",
+              food: "なし",
+              price: "¥250,000",
+            },
+            {
+              title: "プランC（2週間）",
+              duration: "2週間",
+              support: ["筆記試験", "実技試験"],
+              accommodation: "あり",
+              food: "あり",
+              price: "¥380,000",
+            },
+          ].map((plan, index) => (
+            <div
+              key={index}
+              className="bg-[var(--secondary-color)] rounded-2xl p-6 shadow-sm border-1 border-gray-300"
+            >
+              <h3 className="text-2xl font-semibold mb-2">{plan.title}</h3>
+              <p className="text-lg text-gray-700 mb-2">
+                期間：{plan.duration}
+              </p>
+              <p className="text-lg text-gray-700 mb-2">
+                サポート：{plan.support.join("、")}
+              </p>
+              <p className="text-lg text-gray-700 mb-2">
+                宿泊：{plan.accommodation}
+              </p>
+              <p className="text-lg text-gray-700 mb-2">食事：{plan.food}</p>
+              <p className="text-xl font-bold text-[var(--main-color)] mb-4">
+                {plan.price}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className="grid gap-10 md:grid-cols-2 items-center justify-between">
         <div className="col-span-1 bg-[var(--secondary-color)] rounded-2xl shadow-sm border-1 border-gray-300 h-[500px]">
           <MapContainer
