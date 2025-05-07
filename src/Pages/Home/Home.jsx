@@ -239,6 +239,45 @@ const Home = () => {
           </RouterLink>
         </div>
       </section>
+      {/* Why Choose Us Section */}
+      <section className="bg-[var(--secondary-color)] py-16 px-4 md:px-12 lg:px-20">
+        <div className="max-w-7xl mx-auto flex flex-col gap-10 items-center text-center">
+          <Button variant={"dotted"}>Why Choose Us</Button>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight">
+            Tailored Support for Foreigners in Japan
+          </h2>
+          <p className="text-base md:text-lg text-gray-600 max-w-3xl">
+            At Asia Driving, we go beyond just driving lessons. We provide full
+            assistance throughout your licensing journey — with cultural
+            sensitivity and multilingual support at every step.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left w-full max-w-5xl">
+            {[
+              "Multilingual Instructors",
+              "Tailored Courses for Foreigners",
+              "Preparation for Writing and Driving Exam",
+              "Full Assistance Throughout the Process",
+              "License Conversion Assistance",
+              "Flexible Scheduling",
+              "Cultural Sensitivity",
+              "International Test Preparation",
+              "Affordable Packages",
+              "Online Booking and Support",
+              "Transportation Fee Covered for Distant Students",
+              "100% Success Rate",
+            ].map((point, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl p-5 shadow-sm flex items-start gap-3"
+              >
+                <CheckCircleFilled className="text-[var(--main-color)] mt-1 text-lg" />
+                <p className="text-gray-700 font-medium">{point}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section>
         <ContactSection />

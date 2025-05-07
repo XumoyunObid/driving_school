@@ -218,6 +218,44 @@ const HomeJa = () => {
           </RouterLink>
         </div>
       </section>
+      {/* なぜ私たちを選ぶのか セクション */}
+      <section className="bg-[var(--secondary-color)] py-16 px-4 md:px-12 lg:px-20">
+        <div className="max-w-7xl mx-auto flex flex-col gap-10 items-center text-center">
+          <Button variant={"dotted"}>私たちを選ぶ理由</Button>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight">
+            日本に住む外国人のためのサポート
+          </h2>
+          <p className="text-base md:text-lg text-gray-600 max-w-3xl">
+            Asia Drivingでは、単なる運転レッスンにとどまりません。
+            文化的配慮と多言語サポートを通じて、免許取得の全過程をサポートします。
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left w-full max-w-5xl">
+            {[
+              "多言語対応のインストラクター",
+              "外国人向けの特別コース",
+              "筆記試験・実技試験の対策",
+              "プロセス全体にわたるフルサポート",
+              "免許切替のサポート",
+              "柔軟なスケジュール対応",
+              "文化的配慮のある対応",
+              "国際試験の準備サポート",
+              "手頃な料金プラン",
+              "オンライン予約＆サポート",
+              "遠方の方には交通費補助",
+              "合格率100%",
+            ].map((point, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl p-5 shadow-sm flex items-start gap-3"
+              >
+                <CheckCircleFilled className="text-[var(--main-color)] mt-1 text-lg" />
+                <p className="text-gray-700 font-medium">{point}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section>
         <ContactSectionJa />
