@@ -28,31 +28,35 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between px-5 py-3">
         <RouterLink to={isJapanese ? "/ja" : "/"} className="flex items-center">
           <img src={logo} alt="Logo" className="w-16" />
+          <p className="font-bold text-md">
+            Asia Driving <br />
+            School
+          </p>
         </RouterLink>
 
         {/* desktop nav */}
         <nav className="hidden md:flex items-center space-x-6">
           <RouterLink
             to={isJapanese ? "/ja/about-us" : "/about-us"}
-            className="hover:text-[var(--main-color)]"
+            className="custom-underline"
           >
             {isJapanese ? "私たちに関しては" : "About Us"}
           </RouterLink>
           <RouterLink
             to={isJapanese ? "/ja/services" : "/services"}
-            className="hover:text-[var(--main-color)]"
+            className="custom-underline"
           >
             {isJapanese ? "サービス" : "Services"}
           </RouterLink>
           <RouterLink
             to={isJapanese ? "/ja/blogs" : "/blogs"}
-            className="hover:text-[var(--main-color)]"
+            className="custom-underline"
           >
             {isJapanese ? "ブログ" : "Blogs"}
           </RouterLink>
           <RouterLink
             to={isJapanese ? "/ja/contact-us" : "/contact-us"}
-            className="hover:text-[var(--main-color)]"
+            className="custom-underline"
           >
             {isJapanese ? "お問い合わせ" : "Contact Us"}
           </RouterLink>

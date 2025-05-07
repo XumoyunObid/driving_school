@@ -1,6 +1,10 @@
 import { FacebookFilled } from "@ant-design/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareWhatsapp, faLine } from "@fortawesome/free-brands-svg-icons";
+import {
+  faSquareWhatsapp,
+  faLine,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
@@ -29,27 +33,39 @@ const Footer = () => {
           </h4>
           <ul className="space-y-2 text-white font-medium">
             <li className="hover:text-[var(--main-color)] transition-all">
-              <Link to={isJapanese ? "/ja" : "/"}>
+              <Link to={isJapanese ? "/ja" : "/"} className="custom-underline">
                 {isJapanese ? "ホーム" : "Home"}
               </Link>
             </li>
             <li className="hover:text-[var(--main-color)] transition-all">
-              <Link to={isJapanese ? "/ja/about-us" : "/about-us"}>
+              <Link
+                to={isJapanese ? "/ja/about-us" : "/about-us"}
+                className="custom-underline"
+              >
                 {isJapanese ? "私たちに関しては" : "About Us"}
               </Link>
             </li>
             <li className="hover:text-[var(--main-color)] transition-all">
-              <Link to={isJapanese ? "/ja/services" : "/services"}>
+              <Link
+                to={isJapanese ? "/ja/services" : "/services"}
+                className="custom-underline"
+              >
                 {isJapanese ? "サービス" : "Service"}
               </Link>
             </li>
             <li className="hover:text-[var(--main-color)] transition-all">
-              <Link to={isJapanese ? "/ja/contact-us" : "/contact-us"}>
+              <Link
+                to={isJapanese ? "/ja/contact-us" : "/contact-us"}
+                className="custom-underline"
+              >
                 {isJapanese ? "お問い合わせ" : "Contact Us"}
               </Link>
             </li>
             <li className="hover:text-[var(--main-color)] transition-all">
-              <Link to={isJapanese ? "/ja/blogs" : "/Blogs"}>
+              <Link
+                to={isJapanese ? "/ja/blogs" : "/Blogs"}
+                className="custom-underline"
+              >
                 {isJapanese ? "ブログ" : "Blogs"}
               </Link>
             </li>
@@ -61,30 +77,63 @@ const Footer = () => {
             {isJapanese ? "連絡先情報" : "Contact Info"}
           </h4>
           <ul className="space-y-2 text-white text-sm">
-            <li>
-              {isJapanese
-                ? "〒365-0005 埼玉県鴻巣市広田2270-1"
-                : "2270-1 Hiroda, Konosu, Saitama 365-0005"}
+            <li className="transition-all hover:text-[var(--main-color)]">
+              <p className="custom-underline">
+                {isJapanese
+                  ? "〒365-0005 埼玉県鴻巣市広田2270-1"
+                  : "2270-1 Hiroda, Konosu, Saitama 365-0005"}
+              </p>
             </li>
-            <li>
-              <a href="tel:+818070527082">+818070527082</a>
+            <li className="transition-all hover:text-[var(--main-color)]">
+              <a href="tel:080-6749-5131" className="custom-underline">
+                080-6749-5131
+              </a>
             </li>
-            <li>
-              <a href="mailto:asiadrivelicense.info@gmail.com">
+            <li className="transition-all hover:text-[var(--main-color)]">
+              <a
+                href="mailto:asiadrivelicense.info@gmail.com"
+                className="custom-underline"
+              >
                 asiadrivelicense.info@gmail.com
               </a>
             </li>
           </ul>
         </div>
         <div className="flex items-start gap-4">
-          <a href="" className="text-[30px]">
+          <a
+            href="https://www.facebook.com/share/15LLwZ4jMw/?mibextid=wwXIfr"
+            target="_blank"
+            className="text-[30px] hover:text-[var(--main-color)] transition-all"
+          >
             <FacebookFilled />
           </a>
-          <a href="" className="text-[30px]">
-            <FontAwesomeIcon icon={faSquareWhatsapp} className="text-white" />
+          <a
+            href="https://wa.me/818030865131"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[30px]"
+          >
+            <FontAwesomeIcon
+              icon={faSquareWhatsapp}
+              className="hover:text-[var(--main-color)] transition-all text-white"
+            />
           </a>
-          <a href="" className="text-[30px]">
-            <FontAwesomeIcon icon={faLine} className="text-white" />
+
+          <a href="https://lin.ee/" className="text-[30px]">
+            <FontAwesomeIcon
+              icon={faLine}
+              className="text-white hover:text-[var(--main-color)] transition-all "
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/saitamadrivingschool"
+            target="_blank"
+            className="text-[30px]"
+          >
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className="text-white hover:text-[var(--main-color)] transition-all "
+            />
           </a>
         </div>
       </div>

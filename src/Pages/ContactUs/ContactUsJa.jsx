@@ -38,7 +38,7 @@ const ContactUsJa = () => {
 
   return (
     <section
-      className="py-16 px-6 text-center bg-white container mx-auto w-full"
+      className="py-16 px-6 text-center bg-white container mx-auto w-full mt-1"
       style={{
         maxWidth: "var(--breakpoint-lg)",
       }}
@@ -64,10 +64,10 @@ const ContactUsJa = () => {
             お電話でのお問い合わせ
           </h3>
           <p className="text-gray-600 text-lg">
-            <a href="tel:+818030865131">+818030865131</a>
+            <a href="tel:080-6749-5131">080-6749-5131</a>
           </p>
           <p className="text-gray-600 text-lg">
-            <a href="tel:+818070527082">+818070527082</a>
+            <a href="tel:080-3086-5131">080-3086-5131</a>
           </p>
         </div>
 
