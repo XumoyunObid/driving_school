@@ -191,8 +191,66 @@ const HomeJa = () => {
         </div>
       </section>
 
+      <div className="my-20 text-center px-5">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6">コースプラン</h2>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-12 text-lg">
+          宿泊と食事付きのサポートが充実したプランから、予算重視のプランまで、あなたに合ったプランをお選びください。
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {[
+            {
+              title: "プランA",
+              duration: "3ヶ月",
+              support: ["筆記試験", "実技試験"],
+              accommodation: "なし",
+              food: "なし",
+              price: "¥186,000",
+            },
+            {
+              title: "プランB（1ヶ月）",
+              duration: "1ヶ月",
+              support: ["筆記試験", "実技試験"],
+              accommodation: "なし（希望の場合：¥3,000/日）",
+              food: "なし",
+              price: "¥250,000",
+            },
+            {
+              title: "プランC（2週間）",
+              duration: "2週間",
+              support: ["筆記試験", "実技試験"],
+              accommodation: "あり",
+              food: "あり",
+              price: "¥380,000",
+            },
+          ].map((plan, index) => (
+            <RouterLink to={"/ja/contact-us"}>
+              <div
+                key={index}
+                className="bg-[var(--secondary-color)] rounded-2xl p-6 shadow-sm border-1 border-gray-300"
+              >
+                <h3 className="text-2xl font-semibold mb-2">{plan.title}</h3>
+                <p className="text-lg text-gray-700 mb-2">
+                  期間：{plan.duration}
+                </p>
+                <p className="text-lg text-gray-700 mb-2">
+                  サポート：{plan.support.join("、")}
+                </p>
+                <p className="text-lg text-gray-700 mb-2">
+                  宿泊：{plan.accommodation}
+                </p>
+                <p className="text-lg text-gray-700 mb-2">食事：{plan.food}</p>
+                <p className="text-xl font-bold text-[var(--main-color)] mb-4">
+                  {plan.price}
+                </p>
+              </div>
+            </RouterLink>
+          ))}
+        </div>
+      </div>
+
       {/* Services Section */}
-      <section className="py-16 px-4 sm:px-6 md:px-8 lg:px-20">
+      <section className="bg-[var(--secondary-color)] py-16 px-4 sm:px-6 md:px-8 lg:px-20">
         <div className="flex flex-col gap-20 items-center">
           <div className="flex flex-col gap-5 items-center">
             <Button variant={"dotted"}>サービス一覧</Button>
@@ -218,8 +276,8 @@ const HomeJa = () => {
           </RouterLink>
         </div>
       </section>
-      {/* なぜ私たちを選ぶのか セクション */}
-      <section className="bg-[var(--secondary-color)] py-16 px-4 md:px-12 lg:px-20">
+
+      <section className="py-16 px-4 md:px-12 lg:px-20">
         <div className="max-w-7xl mx-auto flex flex-col gap-10 items-center text-center">
           <Button variant={"dotted"}>私たちを選ぶ理由</Button>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight">
