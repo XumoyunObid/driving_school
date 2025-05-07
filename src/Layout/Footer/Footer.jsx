@@ -1,3 +1,6 @@
+import { FacebookFilled } from "@ant-design/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareWhatsapp, faLine } from "@fortawesome/free-brands-svg-icons";
 import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
@@ -46,8 +49,8 @@ const Footer = () => {
               </Link>
             </li>
             <li className="hover:text-[var(--main-color)] transition-all">
-              <Link to={isJapanese ? "/ja/instructors" : "/instructors"}>
-                {isJapanese ? "インストラクター" : "Instructors"}
+              <Link to={isJapanese ? "/ja/blogs" : "/Blogs"}>
+                {isJapanese ? "ブログ" : "Blogs"}
               </Link>
             </li>
           </ul>
@@ -64,7 +67,7 @@ const Footer = () => {
                 : "2270-1 Hiroda, Konosu, Saitama 365-0005"}
             </li>
             <li>
-              <a href="tel:+818030865131">+818030865131</a>
+              <a href="tel:+818070527082">+818070527082</a>
             </li>
             <li>
               <a href="mailto:asiadrivelicense.info@gmail.com">
@@ -72,6 +75,17 @@ const Footer = () => {
               </a>
             </li>
           </ul>
+        </div>
+        <div className="flex items-start gap-4">
+          <a href="" className="text-[30px]">
+            <FacebookFilled />
+          </a>
+          <a href="" className="text-[30px]">
+            <FontAwesomeIcon icon={faSquareWhatsapp} className="text-white" />
+          </a>
+          <a href="" className="text-[30px]">
+            <FontAwesomeIcon icon={faLine} className="text-white" />
+          </a>
         </div>
       </div>
 

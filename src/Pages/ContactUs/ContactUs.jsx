@@ -116,7 +116,7 @@ const ContactUs = () => {
           <h3 className="text-2xl font-semibold mb-2">Email</h3>
           <p className="text-gray-600 text-lg">
             <a href="mailto:asiadrivelicense.info@gmail.com">
-            asiadrivelicense.info@gmail.com
+              asiadrivelicense.info@gmail.com
             </a>
           </p>
         </div>
@@ -227,45 +227,70 @@ const ContactUs = () => {
         <div className="space-y-4 max-w-4xl w-full">
           {[
             {
+              question: "Can I drive in Japan with my foreign license?",
+              answer:
+                "Only if your country has a license agreement with Japan and you provide an official translation. In most cases, you will need to exchange it or take exams.",
+            },
+            {
               question:
-                "What documents do I need to enroll in a driving course?",
+                "What do I need to get a Japanese driver’s license from scratch?",
               answer:
-                "You'll typically need a government-issued ID, proof of residency, and in some cases, a learner’s permit.",
+                "• Valid residence card • Certificate of residence (Jūminhyō)\n• Vision test\n• Written test (available in some languages)\n• Practical driving test\n• Payment of fees",
             },
             {
-              question: "Do you offer different driving lesson packages?",
+              question:
+                "What is the license exchange process (Gaimen Kirikae)?",
               answer:
-                "Yes, we offer a variety of packages suited for beginners, intermediate, and advanced learners.",
+                "It allows you to convert your foreign license to a Japanese one if your country has an agreement with Japan. A practical test may still be required.",
             },
             {
-              question: "Can I customize a driving lesson package?",
+              question:
+                "What if my country doesn’t have an agreement with Japan?",
               answer:
-                "Absolutely! We allow full customization of driving lesson schedules to fit your personal needs.",
+                "You must take:\n• A written test\n• A practical test at a driving center\n• Provide proof you lived in your home country at least 3 months after obtaining your license",
             },
             {
-              question: "How long do your driving lessons typically last?",
+              question: "What are the most common types of licenses in Japan?",
               answer:
-                "Each lesson typically lasts between 45 minutes to an hour.",
+                "• Class 1 (普通自動車免許): Regular car\n• Motorcycle license (普通二輪免許)\n• Motorized bicycle (Moped) (原付免許, 50cc)\n• Medium/Large truck licenses\n• Class 2 (第二種免許): For taxi and bus drivers",
             },
             {
-              question: "What type of vehicles do you use for driving lessons?",
+              question: "In which languages can I take the written test?",
               answer:
-                "We use dual-control, modern vehicles that are regularly maintained for safety.",
+                "Available in Japanese, English, Chinese, Portuguese, and a few others depending on the location.",
             },
             {
-              question: "Do you offer discounts for students or groups?",
+              question: "How hard is the practical test?",
               answer:
-                "Yes! We have seasonal discounts, and we offer special rates for students and group bookings.",
+                "It’s very strict. Even experienced drivers often fail. It’s highly recommended to train with a professional instructor.",
+            },
+            {
+              question: "How much does it cost?",
+              answer:
+                "Getting a license from scratch can cost ¥250,000 to ¥400,000. If you’re exchanging a foreign license, costs are much lower.",
+            },
+            {
+              question:
+                "Can I work as a professional driver with a foreign license?",
+              answer:
+                "No. You must obtain a Japanese Class 2 license (第二種免許) and meet the requirements for age, experience, and visa status.",
+            },
+            {
+              question: "How long does the process take?",
+              answer:
+                "It varies. A license exchange may take a few weeks. Starting from scratch may take several months, depending on your schedule and training.",
             },
           ].map((faq, idx) => (
             <details
               key={idx}
               className="bg-[var(--secondary-color)] border border-gray-300 rounded-xl p-8 cursor-pointer"
             >
-              <summary className="text-xl font-semibold">
+              <summary className="text-xl font-semibold whitespace-pre-wrap">
                 {faq.question}
               </summary>
-              <p className="mt-2 text-gray-700">{faq.answer}</p>
+              <p className="mt-2 text-gray-700 whitespace-pre-wrap">
+                {faq.answer}
+              </p>
             </details>
           ))}
         </div>

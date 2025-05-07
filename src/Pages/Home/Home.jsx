@@ -165,7 +165,7 @@ const Home = () => {
                 </p>
               </div>
               <img
-                src="/about2.avif"
+                src="/image11.JPEG"
                 alt="Instructor with student"
                 className="h-[160px] sm:h-[240px] object-cover rounded-2xl w-full"
               />

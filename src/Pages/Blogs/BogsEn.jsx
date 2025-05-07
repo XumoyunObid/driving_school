@@ -17,7 +17,7 @@ const blogPosts = [
     id: "at-vs-mt",
     title: "AT vs. MT License: Which One Should You Choose in Japan?",
     tag: "AT License or MT License | Beginner Driver Japan",
-    image: "/image1.jpeg",
+    image: "/image9.JPEG",
     alt: "AT vs MT driving license in Japan",
     summary:
       "In Japan, choose between Automatic Transmission (AT) and Manual Transmission (MT) licenses. AT is quicker to obtain; MT offers more vehicle flexibility. Learn pros and cons to decide.",
@@ -26,7 +26,7 @@ const blogPosts = [
     id: "driving-school",
     title: "5 Tips for Choosing the Best Driving School in Saitama",
     tag: "Driving School Saitama | School Comparison",
-    image: "/image2.jpg",
+    image: "/image10.JPEG",
     alt: "Choosing a driving school in Saitama",
     summary:
       "Choosing the right driving school ensures smooth license acquisition. Consider multilingual instructors, flexible schedules, reputation, and cost. Here are five tips to find the best school.",
@@ -71,7 +71,7 @@ const BlogsEn = () => {
             <img
               src={post.image}
               alt={post.alt}
-              className="w-full h-48 object-cover rounded-t-lg"
+              className="w-full h-70 object-cover rounded-t-lg"
             />
             <div className="p-4">
               <h2 className="text-xl font-bold text-[var(--main-color)] mb-1">

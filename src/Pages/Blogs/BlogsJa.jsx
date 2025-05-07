@@ -16,7 +16,7 @@ const blogPosts = [
     id: "at-vs-mt",
     title: "AT免許とMT免許：日本ではどちらを選ぶべきか？",
     tag: "AT免許・MT免許 | 初心者ドライバー 日本",
-    image: "/image1.jpeg",
+    image: "/image9.JPEG",
     alt: "日本のATとMT免許",
     summary:
       "日本では、オートマチック（AT）とマニュアル（MT）の免許があります。ATは取得が早く、MTは多くの車種を運転できる利点があります。それぞれのメリットとデメリットを学びましょう。",
@@ -25,7 +25,7 @@ const blogPosts = [
     id: "driving-school",
     title: "埼玉でおすすめの自動車教習所を選ぶための5つのポイント",
     tag: "埼玉 教習所 | 教習所 比較",
-    image: "/image2.jpg",
+    image: "/image10.JPEG",
     alt: "埼玉の教習所選び",
     summary:
       "適切な教習所を選ぶことで、スムーズに免許取得を進めることができます。多言語対応、柔軟なスケジュール、評判、料金などを考慮して、最適な教習所を見つけるための5つのポイントを紹介します。",
@@ -70,7 +70,7 @@ const BlogsEn = () => {
             <img
               src={post.image}
               alt={post.alt}
-              className="w-full h-48 object-cover rounded-t-lg"
+              className="w-full h-70 object-cover rounded-t-lg"
             />
             <div className="p-4">
               <h2 className="text-xl font-bold text-[var(--main-color)] mb-1">

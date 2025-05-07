@@ -148,7 +148,7 @@ const HomeJa = () => {
                 </p>
               </div>
               <img
-                src="/about2.avif"
+                src="/image11.JPEG"
                 alt="教官と生徒"
                 className="h-[160px] sm:h-[240px] object-cover rounded-2xl w-full"
               />

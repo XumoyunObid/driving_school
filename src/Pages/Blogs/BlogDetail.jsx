@@ -22,7 +22,7 @@ const posts = {
     {
       id: "at-vs-mt",
       title: "AT vs. MT License: Which One Should You Choose in Japan?",
-      image: "/image1.jpeg",
+      image: "/image9.JPEG",
       alt: "AT vs MT driving license in Japan",
       content: [
         `In Japan, you choose between two types of driving licenses: Automatic Transmission (AT) and Manual Transmission (MT). Each has pros and cons depending on your lifestyle, driving goals, and future plans.`,
@@ -34,7 +34,7 @@ const posts = {
     {
       id: "driving-school",
       title: "5 Tips for Choosing the Best Driving School in Saitama",
-      image: "/image2.jpg",
+      image: "/image10.JPEG",
       alt: "Choosing a driving school in Saitama",
       content: [
         `Choosing the right driving school is key to getting your Japanese license efficiently and confidently. Saitama has several options, but it's important to compare them before enrolling.`,
@@ -84,7 +84,7 @@ const posts = {
     {
       id: "at-vs-mt",
       title: "AT（オートマ）とMT（マニュアル）の違い：どちらの免許を選ぶべき？",
-      image: "/image1.jpeg",
+      image: "/image9.JPEG",
       alt: "ATとMT免許の違い",
       content: [
         `日本で運転免許を取得する際には、AT（オートマ）とMT（マニュアル）の2種類から選ぶ必要があります。それぞれの特徴を理解して、自分に合ったものを選びましょう。`,
@@ -96,7 +96,7 @@ const posts = {
     {
       id: "driving-school",
       title: "埼玉で人気の自動車教習所を選ぶ5つのポイント",
-      image: "/image2.jpg",
+      image: "/image10.JPEG",
       alt: "埼玉の教習所の選び方",
       content: [
         `教習所の選び方は、免許取得の成否を大きく左右します。埼玉で信頼できる教習所を選ぶための5つのポイントをご紹介します。`,
