@@ -108,7 +108,7 @@ const Footer = () => {
             <FacebookFilled />
           </a>
           <a
-            href="https://wa.me/818030865131"
+            href="https://wa.me/818067495131"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[30px]"
@@ -119,7 +119,7 @@ const Footer = () => {
             />
           </a>
 
-          <a href="https://lin.ee/" className="text-[30px]">
+          <a href="https://line.me/ti/p/jgPc2YoB4Q" className="text-[30px]">
             <FontAwesomeIcon
               icon={faLine}
               className="text-white hover:text-[var(--main-color)] transition-all "

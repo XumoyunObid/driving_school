@@ -149,7 +149,7 @@ const Home = () => {
               support: ["Written test", "Driving test"],
               accommodation: "No (¥3,000/day if needed)",
               food: "No",
-              price: "¥250,000",
+              price: "¥280,000",
             },
             {
               title: "Plan C (2 weeks)",
